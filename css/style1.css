@@ -206,7 +206,7 @@ body .block-about-me {
     left: 1%;
     border: 1px solid #30303345;
     padding: 20px;
-    width: 19.5%;
+    width: 20%;
     border-radius: 1.5rem;
     height: calc(100% - 2rem);
     background: #f2f2f2;   
@@ -220,11 +220,12 @@ body.dark-theme .block-about-me {
     width: 19.5%;
     border-radius: 1.5rem;
     height: calc(100% - 2rem);
+    width: 20%;
     background: #161616;    
 }
 
 .block-main {
-    margin-left: 320px;
+    margin-left: 20%;
     padding: 20px;
     flex: 1;
     row-gap: 20px;
@@ -311,7 +312,7 @@ body.dark-theme .card-favourites-tools {
     height: auto;
 }
 /* Адаптивность */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     .block-about-me {
         width: 250px;
     }
@@ -368,7 +369,7 @@ body.dark-theme .card-favourites-tools {
     .block-stack-technologies {
         flex-direction: column;
     }
-}
+} */
 
 /* Секции */
 .block-main-welcome {
@@ -611,4 +612,179 @@ body.dark-theme button {
     height: 25vw;
     top: -10vh;
     left: -10vw;
+}
+/* Адаптивность */
+@media (max-width: 1600px) {
+    header {
+        width: 82%;
+        left: 18%;
+    }
+    .block-header-all ul {
+        width: 75%;
+    }
+    .block-about-me {
+        width: 17%;
+    }
+    .block-main {
+        margin-left: 19%;
+    }
+    .circular-scroll-wrapper {
+        left: 90%;
+    }
+}
+
+@media (max-width: 1440px) {
+    header {
+        width: 80%;
+        left: 20%;
+    }
+    .block-header-all ul {
+        width: 70%;
+    }
+    .block-about-me {
+        width: 19%;
+    }
+    .block-main {
+        margin-left: 21%;
+    }
+    .card-favourites-tools {
+        width: 18%;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        width: 75%;
+        left: 25%;
+    }
+    .block-header-all ul {
+        width: 65%;
+    }
+    .block-about-me {
+        width: 23%;
+    }
+    .block-main {
+        margin-left: 25%;
+    }
+    .card-favourites-tools {
+        width: 22%;
+    }
+    .circular-scroll-wrapper {
+        left: 88%;
+    }
+}
+
+@media (max-width: 992px) {
+    .block-aside-main {
+        flex-direction: column;
+    }
+    header {
+        width: 100%;
+        left: 0;
+    }
+    .block-header-all {
+        position: relative;
+        width: 100%;
+        padding: 15px;
+    }
+    .block-header-all ul {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .block-links-header-pages {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .block-about-me {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .block-main {
+        margin-left: 0;
+    }
+    .card-favourites-tools {
+        width: 30%;
+    }
+    .circular-scroll-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-main-welcome h1 {
+        font-size: 2.8rem;
+        line-height: 4rem;
+    }
+    .block-main-welcome p {
+        font-size: 1.5rem;
+    }
+    .block-cards-all-portfolio {
+        grid-template-columns: 1fr;
+    }
+    .block-makets-figma-all {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-favourites-tools {
+        width: 45%;
+    }
+    .block-main-message + h1,
+    .block-main h1, 
+    .block-main h2 {
+        line-height: 3.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .block-main-welcome h1 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .block-main-welcome p {
+        font-size: 1.2rem;
+    }
+    .block-makets-figma-all {
+        grid-template-columns: 1fr;
+    }
+    .card-favourites-tools {
+        width: 100%;
+    }
+    .block-header-all ul a {
+        font-size: 1rem;
+        padding: 0 1rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .toggle-switch {
+        width: 70px;
+    }
+    label {
+        width: 70px;
+        height: 2.5rem;
+    }
+    .slider::before {
+        width: 25px;
+        height: 25px;
+    }
+    input:checked ~ .slider::before {
+        transform: translateX(20px) !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .block-main-welcome h1 {
+        font-size: 1.8rem;
+    }
+    .block-main-message p {
+        font-size: 1rem !important;
+    }
+    .block-links-header-pages {
+        gap: 10px;
+    }
+    .block-header-all ul a {
+        font-size: 0.9rem;
+    }
 }
