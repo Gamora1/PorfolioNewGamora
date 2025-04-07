@@ -614,32 +614,37 @@ body.dark-theme button {
     left: -10vw;
 }
 /* Адаптивность */
-@media (max-width: 1600px) {
-    header {
-        width: 82%;
-        left: 18%;
-    }
-    .block-header-all ul {
+/* Адаптация для 1920px и ноутбуков */
+@media (max-width: 1920px) {
+    .block-header-all {
         width: 75%;
     }
+    .block-header-all ul {
+        width: 60%;
+    }
     .block-about-me {
-        width: 17%;
+        width: 18%;
     }
     .block-main {
-        margin-left: 19%;
+        margin-left: 21%;
+    }
+    .block-header-links {
+        width: 22%;
+    }
+    .card-favourites-tools {
+        width: 15%;
     }
     .circular-scroll-wrapper {
-        left: 90%;
+        left: 92%;
     }
 }
 
-@media (max-width: 1440px) {
-    header {
-        width: 80%;
-        left: 20%;
+@media (max-width: 1600px) {
+    .block-header-all {
+        width: 77%;
     }
     .block-header-all ul {
-        width: 70%;
+        width: 72%;
     }
     .block-about-me {
         width: 19%;
@@ -650,141 +655,102 @@ body.dark-theme button {
     .card-favourites-tools {
         width: 18%;
     }
+    .circular-scroll-wrapper {
+        left: 91%;
+    }
 }
 
-@media (max-width: 1200px) {
-    header {
-        width: 75%;
-        left: 25%;
+@media (max-width: 1440px) {
+    .block-header-all {
+        width: 85%;
     }
     .block-header-all ul {
-        width: 65%;
+        width: 70%;
     }
     .block-about-me {
-        width: 23%;
+        width: 20%;
     }
     .block-main {
-        margin-left: 25%;
+        margin-left: 22%;
+    }
+    .card-favourites-tools {
+        width: 20%;
+    }
+    .circular-scroll-wrapper {
+        left: 90%;
+    }
+    .block-main-welcome h1 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 1366px) {
+    .block-header-all {
+        width: 87%;
+    }
+    .block-header-all ul {
+        width: 68%;
+    }
+    .block-about-me {
+        width: 21%;
+    }
+    .block-main {
+        margin-left: 23%;
     }
     .card-favourites-tools {
         width: 22%;
     }
     .circular-scroll-wrapper {
-        left: 88%;
+        left: 89%;
     }
-}
-
-@media (max-width: 992px) {
-    .block-aside-main {
-        flex-direction: column;
-    }
-    header {
-        width: 100%;
-        left: 0;
-    }
-    .block-header-all {
-        position: relative;
-        width: 100%;
-        padding: 15px;
-    }
-    .block-header-all ul {
-        width: 100%;
-        height: auto;
-        flex-wrap: wrap;
-    }
-    .block-links-header-pages {
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 15px;
-    }
-    .block-about-me {
-        position: relative;
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-    .block-main {
-        margin-left: 0;
-    }
-    .card-favourites-tools {
-        width: 30%;
-    }
-    .circular-scroll-wrapper {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
     .block-main-welcome h1 {
-        font-size: 2.8rem;
-        line-height: 4rem;
+        font-size: 3rem;
     }
     .block-main-welcome p {
-        font-size: 1.5rem;
-    }
-    .block-cards-all-portfolio {
-        grid-template-columns: 1fr;
-    }
-    .block-makets-figma-all {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .card-favourites-tools {
-        width: 45%;
-    }
-    .block-main-message + h1,
-    .block-main h1, 
-    .block-main h2 {
-        line-height: 3.5rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .block-main-welcome h1 {
-        font-size: 2.2rem;
-        line-height: 3rem;
-    }
-    .block-main-welcome p {
-        font-size: 1.2rem;
-    }
-    .block-makets-figma-all {
-        grid-template-columns: 1fr;
-    }
-    .card-favourites-tools {
-        width: 100%;
-    }
-    .block-header-all ul a {
-        font-size: 1rem;
-        padding: 0 1rem;
-        height: 2.5rem;
-        line-height: 2.5rem;
-    }
-    .toggle-switch {
-        width: 70px;
-    }
-    label {
-        width: 70px;
-        height: 2.5rem;
-    }
-    .slider::before {
-        width: 25px;
-        height: 25px;
-    }
-    input:checked ~ .slider::before {
-        transform: translateX(20px) !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .block-main-welcome h1 {
         font-size: 1.8rem;
     }
-    .block-main-message p {
-        font-size: 1rem !important;
+}
+
+/* Оптимизация для ноутбуков */
+@media (max-width: 1280px) {
+    .block-header-all {
+        width: 88%;
     }
-    .block-links-header-pages {
-        gap: 10px;
+    .block-header-all ul {
+        width: 65%;
     }
-    .block-header-all ul a {
-        font-size: 0.9rem;
+    .block-about-me {
+        width: 22%;
+    }
+    .block-main {
+        margin-left: 24%;
+    }
+    .card-favourites-tools {
+        width: 23%;
+    }
+    .circular-scroll-wrapper {
+        left: 88%;
+        width: 130px;
+        height: 130px;
+    }
+    .circular-text {
+        font-size: 30px;
+    }
+}
+
+/* Дополнительные корректировки */
+@media (min-width: 1921px) {
+    .container {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    .block-header-all {
+        width: 77%;
+    }
+    .block-about-me {
+        width: 17%;
+    }
+    .block-main {
+        margin-left: 19%;
     }
 }
