@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-const words = [" веб-приложения.", " сайты-визитки.", " API.", " Desktop-приложения.", " Дизайны проектов.", " Telegram-ботов."];
+const words = [" веб-приложения.", " сайты-визитки.", " API.", " desktop-приложения.", " дизайн проектов.", " telegram-ботов."];
 let currentWordIndex = 0;
 let currentCharIndex = 0;
 let outputText = "";
