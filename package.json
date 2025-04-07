@@ -1,7 +1,7 @@
 {
     "name": "static-site",
     "version": "1.0.0",
-  "scripts": {
+"scripts": {
   "start": "npx serve -s",
   "build": "npm install --omit=dev"
 },
