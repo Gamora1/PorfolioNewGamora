@@ -225,7 +225,7 @@ body.dark-theme .block-about-me {
 }
 
 .block-main {
-    margin-left: 20%;
+    margin-left: min(21%);
     padding: 20px;
     flex: 1;
     row-gap: 20px;
