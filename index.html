@@ -54,10 +54,6 @@
                     <span>Специальность:</span>
                     <h4>Программист</h4>
                 </div>
-                <div class="block-info-me">
-                    <span>Дата рождения:</span>
-                    <h4>20.02.2003</h4>
-                </div>
                 <div class="block-residence-me">
                     <span>Место жительства:</span>
                     <h4><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 301 201"><g fill="none"><path fill="#FFF" d="M.5.5h300v100H.5z"/><path fill="#D52B1E" d="M.5 100.5h300v100H.5z"/><path fill="#0039A6" d="M.5 67.166h300v66.667H.5z"/></g></svg>Уфа, Россия</h4>
@@ -181,32 +177,29 @@
                 </div>
             </div>
             <!-- Стэк технологий -->
-            <div class="block-stack-technologies" id="stack-technologies">
-                <div class="block-card-technologies">
-                    <h1>Frontend development</h1>
-                    <div class="block-links-technologies">
-                        <a href=""></a>
-                        <a href=""></a>
+            <div class="block-stack-technologies-all" id="stack-technologies">
+                <h1>Stack-технологий</h1>
+                <div class="block-stack-technologies">
+                    <div class="block-card-technologies">
+                        <h2>Front</h2>
+                        <p>HTML/CSS and WordPress.</p>
                     </div>
-                    <p>I work with HTML/CSS and WordPress.</p>
-                </div>
-                <div class="block-card-technologies">
-                    <h1>Backend development</h1>
-                    <div class="block-links-technologies">
-                        <a href=""></a>
-                        <a href=""></a>
+                    <div class="block-card-technologies">
+                        <h2>Back</h2>
+                        <div class="block-links-technologies">
+                            <a href=""></a>
+                            <a href=""></a>
+                        </div>
+                        <p>C#, Java, Python, PHP</p>
                     </div>
-                    <p>I work with HTML/CSS</p>
-                    <img src="" alt="">
-                </div>
-                <div class="block-card-technologies">
-                    <h1>Backend development</h1>
-                    <div class="block-links-technologies">
-                        <a href=""></a>
-                        <a href=""></a>
+                    <div class="block-card-technologies">
+                        <h2>Фреймворки</h2>
+                        <p>ASP.NET Core, Vue.js, Bootstrap 5 </p>
                     </div>
-                    <p>I use Adobe Photoshop, </p>
-                    <img src="" alt="">
+                    <div class="block-card-technologies">
+                        <h2>Библиотеки</h2>
+                        <p>Splide, AOS, jQuery, gsap</p>
+                    </div>
                 </div>
             </div>
             <!-- Обо мне -->
@@ -264,12 +257,12 @@
                     <table>
                         <tr>
                             <td>2023-2024</td>
-                            <td>UKSIVT</td>
+                            <td>ГАПОУ УКСИВТ</td>
                             <td><span>Должность:</span> Секретарь </td>
                         </tr>
                         <tr>
                             <td>2023-2025</td>
-                            <td>UKSIVT</td>
+                            <td>ГАПОУ УКСИВТ</td>
                             <td><span>Должность:</span> Преподаватель </td>
                         </tr>
                     </table>
@@ -277,42 +270,60 @@
             </div>
             <!-- Инструменты -->
             <div class="block-favourites-tools" id="favourites-tools">
-                <div class="card-favourites-tools">
-                    <img src="" alt="">
-                    <h5>Adobe Photoshop</h5>
-                </div>
-                <div class="card-favourites-tools">
-                    <img src="" alt="">
-                    <h5>Figma</h5>
-                </div>
-                <div class="card-favourites-tools">
-                    <img src="" alt="">
-                    <h5>WordPress</h5>
+                <h1>Инструменты</h1>
+                <div class="card-favourites-tools-all">
+                    <div class="card-favourites-tools">
+                        <img class="tools-cards__icon animate-in-up" src="resources/icons/icon-photoshop.svg" alt="Tools Icon" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <h5>Adobe Photoshop</h5>
+                    </div>
+                    <div class="card-favourites-tools">
+                        <img class="tools-cards__icon animate-in-up" src="resources/icons/icon-figma.svg" alt="Tools Icon" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <h5>Figma</h5>
+                    </div>
+                    <div class="card-favourites-tools">
+                        <img class="tools-cards__icon animate-in-up" src="resources/icons/icon-css.svg" alt="Tools Icon" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <h5>CSS3</h5>
+                    </div>
+                    <div class="card-favourites-tools">
+                        <img class="tools-cards__icon animate-in-up" src="resources/icons/icon-html.svg" alt="Tools Icon" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <h5>HTML5</h5>
+                    </div>
                 </div>
             </div>
             <!-- Опыт -->
             <div class="block-caluga-course" id="s">
+                <div class="block-main-message">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                        </svg>
+                        Обучение
+                    </p>
+                </div>
+                <h1>Повышение квалификации</h1>
                 <section class="splide" aria-label="Basic Structure Example">
                     <div class="splide__track">
                       <ul class="splide__list">
                         <li class="splide__slide">
-                            <img src="resources/images/slider-1.jpg" width="100%" alt="">                        
+                            <img src="resources/images/slider-1.jpg" width="100%" alt="Kaluga">                        
                         </li>
                         <li class="splide__slide">
-                            <img src="resources/images/slider-2.jpg" width="100%" alt="">                                    
+                            <img src="resources/images/slider-2.jpg" width="100%" alt="Kaluga">                                    
                         </li>
                         <li class="splide__slide">
-                            <img src="resources/images/slider-3.jpg" width="100%" alt="">                                    
+                            <img src="resources/images/slider-3.jpg" width="100%" alt="Kaluga">                                    
                         </li>
                         <li class="splide__slide">
-                            <img src="resources/images/slider-4.jpg" width="100%" alt="">                                    
+                            <img src="resources/images/slider-4.jpg" width="100%" alt="Kaluga">                                    
                         </li>
                       </ul>
                     </div>
                 </section>
             </div>
             <!-- Контакты -->
-            <div class="block-contacts" id="contacts">
+            <!-- <div class="block-contacts" id="contacts">
                 <div class="block-main-message">
                     <p>
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
@@ -332,7 +343,7 @@
                     <textarea name="" id=""></textarea>
                     <button>Отправить сообщение</button>
                 </form>
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="libraries/splide-4.1.3/dist/js/splide.min.js"></script>
