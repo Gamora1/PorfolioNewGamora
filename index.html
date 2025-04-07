@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio SD</title>
+    <link rel="icon" href="">    
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="libraries/splide-4.1.3/dist/css/splide.min.css">
+</head>
+<body class="dark-theme">
+    <!-- Шапка сайта -->
+    <div class="gradient-background">
+        <div class="blur"></div>
+        <div class="blur"></div>
+        <div class="blur"></div>
+    </div>
+    <header class="block-header-all">
+        <ul class="block-links-header-pages">
+            <li><a class="menu__link" href="#home">Главная</a></li>
+            <li><a class="menu__link" href="#portfolio">Портфолио</a></li>
+            <li><a class="menu__link" href="#stack-technologies">Стэк технологий</a></li>
+            <li><a class="menu__link" href="#about-me">Обо мне</a></li>
+            <li><a class="menu__link" href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="block-header-links">
+            <div class="toggle-switch">
+                <label>
+                    <input id="btn-change-theme" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <button>Напишите мне</button>
+        </div>
+    </header>
+    <div class="block-aside-main">
+        <!-- Левый сайдбар -->
+        <aside class="block-about-me">
+            <div class="block-nickname-me">
+                <!-- <img src="resources/logoGamora.jpg" alt=""> -->
+                <h1>Шарипова Диана Айдаровна</h1>
+            </div>
+            <img src="resources/SharipovaDianaImage.jpg" alt="Logo">
+            <div class="block-info-about-me">
+                <div class="block-info-me">
+                    <span>Место работы:</span>
+                    <h4>ГАПОУ УКСИВТ</h4>
+                </div>
+                <div class="block-info-me">
+                    <span>Должность:</span>
+                    <h4>Преподаватель</h4>
+                </div>
+                <div class="block-info-me">
+                    <span>Специальность:</span>
+                    <h4>Программист</h4>
+                </div>
+                <div class="block-info-me">
+                    <span>Дата рождения:</span>
+                    <h4>20.02.2003</h4>
+                </div>
+                <div class="block-residence-me">
+                    <span>Место жительства:</span>
+                    <h4><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 301 201"><g fill="none"><path fill="#FFF" d="M.5.5h300v100H.5z"/><path fill="#D52B1E" d="M.5 100.5h300v100H.5z"/><path fill="#0039A6" d="M.5 67.166h300v66.667H.5z"/></g></svg>Уфа, Россия</h4>
+                </div>
+            <div class="block-links-me">
+                <a href="https://github.com/Gamora1" target="_blank">Git</a>
+                <a href="https://vk.com/gam_ra" target="_blank">Vk</a>
+                <a href="https://web.telegram.org/k/#@gam0ra1" target="_blank">Telegram</a>
+                <a href="https://web.whatsapp.com/" target="_blank">What`s App</a>
+            </div>
+            <button>Давайте работать вместе</button>
+            <!-- <iframe src="https://assets.pinterest.com/ext/embed.html?id=39969515437566394" height="285" width="236" frameborder="0" scrolling="no" ></iframe> -->
+        </div>
+        </aside>
+        <!-- Контент -->
+        <div class="block-main">
+            <!-- Обо мне - приветствие -->
+            <div class="block-main-welcome" id="home">
+                <div class="block-main-background"></div>
+                    <div class="block-main-message">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                            </svg>
+                            Давайте встретимся!
+                        </p>
+                    </div>
+                    <div class="block-main-text">
+                        <h1>Меня зовут Шарипова Диана,<br> я 
+                            Fullstack-разработчик
+                        </h1>
+                        <p>Разрабатываю <span id="output">веб-приложения.</span></p>
+                        <div class="circular-scroll-wrapper">
+                            <div class="circular-text-container">
+                            <svg viewBox="0 0 300 300" class="rotating-circle">
+                                <path id="textCirclePath" d="M150,150 m-120,0 a120,120 0 1,1 240,0 a120,120 0 1,1 -240,0" fill="none"/>
+                                <text class="circular-text">
+                                <textPath href="#textCirclePath">SCROLL FOR MORE * SCROLL FOR MORE *</textPath>
+                                </text>
+                            </svg>
+                            <div class="center-arrow">↓</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Портфолио -->
+            <div class="block-portfolio" id="portfolio">
+                <div class="block-main-message">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                        </svg>
+                        Портфолио
+                    </p>
+                </div>
+                <h1>Ознакомьтесь с моими избранными проектами</h1>
+                <div class="block-cards-all-portfolio">
+                     <div class="block-card-portfolio">
+                      <video src="resources/videos/parallax.mkv" width="700" height="375" style="border-radius: 2%;" controls poster="resources/videos/posters/parallax.png"></video>
+                    </div>
+                    <div class="block-card-portfolio">
+                      <video src="resources/videos/arum.mkv" width="700" height="375" style="border-radius: 2%;" controls poster="resources/videos/posters/arum.png"></video>
+                    </div> 
+                   
+                    <div class="block-card-portfolio">
+                      <video src="resources/videos/creativeBlog.mkv" width="700" height="375" style="border-radius: 2%;" controls poster="resources/videos/posters/creativeBlog.png"></video>
+                    </div> 
+                    <div class="block-card-portfolio">
+                      <video src="resources/videos/carDealership.mkv" width="700" height="375" style="border-radius: 2%;" controls poster="resources/videos/posters/carDealership.png"></video>
+                    </div> 
+                </div>
+            </div>
+            <div class="block-makets-figma" id="makets">
+                <div class="block-main-message">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                        </svg>
+                        Макеты
+                    </p>
+                </div>
+                <h1>То, что мы с ребятами делаем на парах</h1>
+                <div class="block-makets-figma-all">
+                    <div class="block-maket-figma">
+                        <a href="https://www.figma.com/design/X65rw69raGZYN5NFKDSOKn/Lover-Flower-(Copy)?node-id=0-1&p=f&t=Zo6noz40qJgOGZAn-0" target="_blank">
+                            <img src="resources/makets-figma/loverFlower.png" alt="LoverFlower">
+                        </a>
+                    </div> 
+                    <div class="block-maket-figma">
+                        <a href="https://www.figma.com/design/1GoebRVB7P5oWFfa2BPyip/PlayChill-02-(Copy)?node-id=0-1&p=f&t=tWMbBcJwVAUENBJl-0" target="_blank">
+                            <img src="resources/makets-figma/playnchill.png" alt="Playnchill">
+                        </a>
+                    </div> 
+                    <div class="block-maket-figma">
+                        <a href="https://www.figma.com/design/QhT5jg8s50GNx3tP2Z24XQ/floristry-(Copy)?node-id=0-1&p=f&t=fWBcin9dZI5Nw2uj-0" target="_blank">
+                            <img src="resources/makets-figma/flowers.png" alt="Flowers">
+                        </a>
+                    </div> 
+                    <div class="block-maket-figma">
+                        <a href="https://www.figma.com/design/bljLVjJJTlYGxqWdiWQT0y/CH-Food-UI-Landing-Page-(Community)-(Copy)?node-id=405-143&p=f&t=TCmk6aqT1SEXLTBb-0" target="_blank">
+                            <img src="resources/makets-figma/food.png" alt="Food">
+                        </a>
+                    </div> 
+                    <div class="block-maket-figma">
+                       <a href="https://www.figma.com/design/rhxFYTcDW9C4NlOg2yUAnF/BeatBay---Music-Stream-Platform-Web-App-(Community)?t=W1zw3aHAFlRwDRwm-0" target="_blank">
+                           <img src="resources/makets-figma/beatBay.png" alt="BeatBay">
+                       </a>
+                   </div>
+                    <div class="block-maket-figma">
+                        <a href="https://www.figma.com/design/RTsU0emVWcXeglvIWlOg8N/%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-%D1%81%D0%B0%D0%B9%D1%82---%D0%A0%D0%B0%D1%81%D1%82%D0%B5%D0%BD%D0%B8%D1%8F-(Copy)?node-id=0-1&p=f&t=MIkZGNV4JX88ei1U-0" target="_blank">
+                            <img src="resources/makets-figma/greenShop.png" alt="GreenShop">
+                        </a>
+                    </div> 
+    
+                </div>
+            </div>
+            <!-- Стэк технологий -->
+            <div class="block-stack-technologies" id="stack-technologies">
+                <div class="block-card-technologies">
+                    <h1>Frontend development</h1>
+                    <div class="block-links-technologies">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <p>I work with HTML/CSS and WordPress.</p>
+                </div>
+                <div class="block-card-technologies">
+                    <h1>Backend development</h1>
+                    <div class="block-links-technologies">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <p>I work with HTML/CSS</p>
+                    <img src="" alt="">
+                </div>
+                <div class="block-card-technologies">
+                    <h1>Backend development</h1>
+                    <div class="block-links-technologies">
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <p>I use Adobe Photoshop, </p>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <!-- Обо мне -->
+            <div class="block-resume" id="about-me">
+                <h1>Образование и практический опыт</h1>
+                <div class="block-info-education">
+                    <h2>Мое образование</h2>
+                    <table>
+                        <tr>
+                            <td>2019-2023</td>
+                            <td>ГАПОУ УКСИВТ</td>
+                            <td><span>Курс</span> 09.02.07 Информационные системы и программирование (Программист) </td>
+                            <td>С отличием</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="block-info-education">
+                    <h2>Доп. курсы по повышению квалификации</h2>
+                    <table>
+                        <tr>
+                            <td>2024</td>
+                            <td>Министерство Просвещения РФ ФГБОУ ДПО "Институт развития профессионального образования</td>
+                            <td><span>Программа: </span>Дополнительная профессиональная программа повышения квалификации
+                                преподавателей и мастеров производственного обучения в центрах повышения квалификации кадров среднего
+                                профессионального образования по компетенции "Веб-технологии" </td>
+                            <td><span>Формат: </span>Очно</td>
+                            <td><span>Город: </span>Калуга</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>ГАУ ДПО Институт развития образования</td>
+                            <td><span>Программа: </span>Проектирование теоретических методических подходов обучения информатике в
+                            соответствии с требованиями обновленных ФГОС </td>
+                            <td><span>Формат: </span>Онлайн</td>
+                            <td><span>Город: </span>Уфа</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>ГАПОУ СКОПТ</td>
+                            <td><span>Программа: </span>Подготовка региональных экспертов конкурсов профессионального мастерства "Абилимпикс"</td>
+                            <td><span>Формат: </span>Онлайн</td>
+                            <td><span>Город: </span>Уфа</td>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>АНОДОПО "Институт цифровых компетенций"</td>
+                            <td><span>Программа: </span>Выполнение заданий второго дня итогового чемпионата всероссийского движения Профессионалы по компетенции Веб-технологии</td>
+                            <td><span>Формат: </span>Онлайн</td>
+                            <td><span>Город: </span>Уфа</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="block-info-work-experience">
+                    <h2>Опыт работы</h2>
+                    <table>
+                        <tr>
+                            <td>2023-2024</td>
+                            <td>UKSIVT</td>
+                            <td><span>Должность:</span> Секретарь </td>
+                        </tr>
+                        <tr>
+                            <td>2023-2025</td>
+                            <td>UKSIVT</td>
+                            <td><span>Должность:</span> Преподаватель </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- Инструменты -->
+            <div class="block-favourites-tools" id="favourites-tools">
+                <div class="card-favourites-tools">
+                    <img src="" alt="">
+                    <h5>Adobe Photoshop</h5>
+                </div>
+                <div class="card-favourites-tools">
+                    <img src="" alt="">
+                    <h5>Figma</h5>
+                </div>
+                <div class="card-favourites-tools">
+                    <img src="" alt="">
+                    <h5>WordPress</h5>
+                </div>
+            </div>
+            <!-- Опыт -->
+            <div class="block-caluga-course" id="s">
+                <section class="splide" aria-label="Basic Structure Example">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="resources/images/slider-1.jpg" width="100%" alt="">                        
+                        </li>
+                        <li class="splide__slide">
+                            <img src="resources/images/slider-2.jpg" width="100%" alt="">                                    
+                        </li>
+                        <li class="splide__slide">
+                            <img src="resources/images/slider-3.jpg" width="100%" alt="">                                    
+                        </li>
+                        <li class="splide__slide">
+                            <img src="resources/images/slider-4.jpg" width="100%" alt="">                                    
+                        </li>
+                      </ul>
+                    </div>
+                </section>
+            </div>
+            <!-- Контакты -->
+            <div class="block-contacts" id="contacts">
+                <div class="block-main-message">
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                        </svg> 
+                        Контакт
+                    </p>
+                </div>
+                <h1>Давайте вместе сделаем что-то потрясающее!</h1>
+                <form action="" method="POST">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                    <textarea name="" id=""></textarea>
+                    <button>Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="libraries/splide-4.1.3/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+        type   : 'loop',
+        perPage: 2,
+        padding: '1%',
+        focus  : 'center',
+        autoplay: true,
+        } );
+
+        splide.mount();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
